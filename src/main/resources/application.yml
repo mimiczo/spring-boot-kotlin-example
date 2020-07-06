@@ -1,0 +1,24 @@
+server:
+  port: 9000
+  display-name: SpringBoot Kotlin Rest Example
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  mvc:
+    media-types:
+      json: application/json
+      html: text/html
+    locale-resolver: accept_header
+    locale: ko
+demo:
+  name: spring-boot-kotlin-example
+  basePackage: com.mimiczo.demo.web
+  jwt:
+    headerName: X-JWT-TOKEN
+    secret: 1234567890
